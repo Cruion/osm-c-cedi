@@ -1,16 +1,16 @@
 scale: 1
 metatile: 2
-name: OpenStreetMap Carto
-description: A general-purpose OpenStreetMap mapnik style, in CartoCSS
+name: CEDI Map LTS Base Map
+description: A basic map with no text or markers/shields.
 bounds: &world
   - -180
   - -85.05112877980659
   - 180
   - 85.05112877980659
 center:
-  - 0
-  - 0
-  - 4
+  - -27.6768305
+  - 153.1200093
+  - 16
 format: png
 interactivity: false
 minzoom: 0

@@ -214,40 +214,13 @@ overlapping borders correctly.
   [zoom >= 14][admin_level = '7'],
   [zoom >= 15][admin_level = '8'],
   [zoom >= 16] {
-    text-name: "[name]";
-    text-face-name: @book-fonts;
-    text-fill: @admin-boundaries;
-    text-halo-radius: @standard-halo-radius;
-    text-halo-fill: @standard-halo-fill;
-    text-largest-bbox-only: false;
-    text-placement: line;
-    text-spacing: 750;
-    text-repeat-distance: 250;
-    text-margin: 10;
-    text-clip: true;
-    text-vertical-alignment: middle;
-    text-dy: -10;
   }
 }
 
 #protected-areas-text[zoom >= 13][way_pixels > 192000] {
-  text-name: "[name]";
-  text-face-name: @book-fonts;
-  text-fill: @protected-area;
   [boundary='aboriginal_lands'],
   [boundary='protected_area'][protect_class='24'] {
-    text-fill: @aboriginal;
   }
-  text-halo-radius: @standard-halo-radius;
-  text-halo-fill: @standard-halo-fill;
-  text-largest-bbox-only: false;
-  text-placement: line;
-  text-spacing: 750;
-  text-repeat-distance: 250;
-  text-margin: 10;
-  text-clip: true;
-  text-vertical-alignment: middle;
-  text-dy: -10;
 }
 
 #protected-areas {

@@ -21,13 +21,7 @@
       line-cap: round;
     }
     #water-barriers-point[zoom >= 17] {
-      marker-fill: @dam;
-      marker-line-color: @dam-line;
-      marker-line-width: 1;
-      marker-width: 8;
-      [zoom >= 18] { marker-width: 10; }
-      marker-allow-overlap: true;
-      marker-ignore-placement: true;
+      [zoom >= 18] { }
     }
   }
 
@@ -38,13 +32,7 @@
       line-dasharray: 2,2;
     }
     #water-barriers-point[zoom >= 17] {
-      marker-fill: @water-color;
-      marker-line-color: @weir-line;
-      marker-line-width: 1;
-      marker-width: 8;
-      [zoom >= 18] { marker-width: 10; }
-      marker-allow-overlap: true;
-      marker-ignore-placement: true;
+      [zoom >= 18] { }
     }
   }
 
@@ -54,12 +42,7 @@
       line-width: 2;
     }
     #water-barriers-point[zoom >= 17] {
-      marker-fill: @lock-gate;
-      marker-line-width: 0;
-      marker-width: 8;
-      [zoom >= 18] { marker-width: 10; }
-      marker-allow-overlap: true;
-      marker-ignore-placement: true;
+      [zoom >= 18] {  }
     }
   }
 }
@@ -122,20 +105,9 @@
   [feature = 'waterway_weir'] {
     #text-point[zoom >= 15],
     #text-line[zoom >= 15] {
-      text-name: "[name]";
-      text-halo-radius: @standard-halo-radius;
-      text-halo-fill: @standard-halo-fill;
-      text-fill: #222;
-      text-size: 10;
-      text-face-name: @book-fonts;
       #text-line {
-        text-placement: line;
-        text-dy: 8;
-        text-spacing: 400;
       }
       #text-point {
-        text-placement: point;
-        text-dy: 8;
       }
     }
   }
@@ -145,15 +117,7 @@
   [feature = 'man_made_pier'][zoom >= 15] {
     #text-point,
     #text-line {
-      text-name: "[name]";
-      text-halo-radius: @standard-halo-radius;
-      text-halo-fill: @standard-halo-fill;
-      text-fill: #222;
-      text-size: 10;
-      text-face-name: @book-fonts;
       #text-line {
-        text-placement: line;
-        text-spacing: 400;
       }
     }
   }
@@ -161,7 +125,5 @@
 
 #springs {
   [natural = 'spring'][zoom >= 14] {
-    marker-file: url('symbols/spring.svg');
-    marker-clip: false;
   }
 }
